@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+Trabalhos/.vscode/launch.json
+Trabalhos/.vscode/tasks.json
