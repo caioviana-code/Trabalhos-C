@@ -2,40 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TAM 12
-#define RAN 90
+#define TAM 10
+
 
 int main() {
 
     srand(time(NULL));
     printf("\n");
+    
+   int a,;
+   char frase[TAM];
+   char palavra[TAM];
 
-    int vetor[TAM];
-    int posicao, aux, pos1, pos2;
-
-    printf("\n- Vetor aleatorio: ");
-    for(posicao = 0; posicao < TAM; posicao++){
-        vetor[posicao] = 10 + rand() % RAN;
-        
-        printf("%i ", vetor[posicao]);
-    }
-
-    for(pos1 = 0; pos1 < TAM; pos1++){
-
-        for(pos2 = pos1 + 1; pos2 < TAM; pos2++){
-
-            if(vetor[pos1] < vetor[pos2]){
-                aux = vetor[pos1];
-                vetor[pos1] = vetor[pos2];
-                vetor[pos2] = aux;
-            }
+    printf("Vetor aleatorio: ");
+    for(a=0; a<TAM; a++){
+      
+        //maior
+        if(a%2 == 0){
+            frase[a] = 65 + (rand()%26);
+            printf("%c ", frase[a]);            
         }
+        //menor
+        else{
+            frase[a] = 97 + (rand()%26);
+            printf("%c ", frase[a]);
+        }
+        
     }
-
-    printf("\n- Vetor ordenado: ");
-    for(posicao = 0; posicao < TAM; posicao++){
-        printf("%i ", vetor[posicao]);
-    }
+   frase[a] = '\0';
 
     printf("\n\n");
     return 0;
