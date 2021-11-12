@@ -16,7 +16,7 @@ int main(){
         printf("Domingo]");
     }
     if(dia1 == 2){
-        printf("[/segunda,");
+        printf("[segunda,");
     }
     if(dia2 == 2){
         printf("Segunda]");

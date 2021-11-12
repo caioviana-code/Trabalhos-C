@@ -19,8 +19,6 @@ int main(){
     printf("- Maior: %i", maior);
     printf("\n- Menor: %i", menor);
 
-    
-
     printf("\n\n");
     return 0;
 }
