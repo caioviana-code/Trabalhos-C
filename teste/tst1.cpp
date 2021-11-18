@@ -1,26 +1,14 @@
 #include <stdio.h>
+#include <stdio.h>
+#include <locale.h>
 
-int main(){
+int main(void) {
 
-    int num, maior, menor;
+	setlocale(LC_ALL, "Portuguese_Brazil");
 
-    do{
-        printf("\n\nNumero: ");
-        fflush(stdin);
-        scanf("%i",num );
+	printf("Anotação");
 
-        if( num >= maior ){
-            maior = num;
-        }
-        if( num <= menor ){
-            menor = num;
-        }
-    }while(num > 0 );
+	printf("\n");
 
-    printf(" - Maior: %i", maior);
-    printf("\n - Menor: %i", menor);
-
-    printf("\n\n");
-    
-    return 0;
+	return 0;
 }

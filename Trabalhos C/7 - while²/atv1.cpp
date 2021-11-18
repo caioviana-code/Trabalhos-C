@@ -8,7 +8,7 @@ int main(){
     printf("Digite dois numeros: ");
     fflush(stdin);
     scanf("%i %i", &v1, &v2);
-
+    
     printf("Numeros primos entres (%i) e (%i): ", v1, v2);
     while(v1 <= v2){
         cont = 0;
