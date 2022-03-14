@@ -10,7 +10,7 @@ int main() {
 
     printf("\n");
    
-    int v, p, rep;
+    int v, p, rep, flag = 0;
     char vetor[TAM], palavra[TAM], cont;
 
     printf("Vetor aleatorio: ");
@@ -42,26 +42,26 @@ int main() {
     printf("\nPalavra: ");
     gets(palavra);
 
-    for(p = 0, v = 0; v < TAM; v++){
+    for(p = 0; palavra[p] != '\0'; p++){
 
-        if(palavra[p] == '\0'){
-            break;
-        }
-        else if(vetor[v] == palavra[v]){
-            p++;
-        }
-        else{
-            p = 0;
+        for(v = 0; v < TAM; v++){
+
+            if(palavra[p] == vetor[v]){ // DUY
+                flag = 1;
+            }
+            else{
+                
+            }
         }
     }
 
-    if(palavra[p] == '\0'){
-        printf("\n- [E possivel]");
+    if(flag == 0){
+        printf("É possivel");
     }
     else{
-        printf("\n- [Nao e possivel]");
+        printf("Não é possivel");
     }
-    
+
     printf("\n\n");
     return 0;
 }
