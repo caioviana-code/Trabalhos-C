@@ -9,5 +9,6 @@
         "TCHAU",
         "VEICULOS",
         "VISUALIZAÇAO"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
 }
